@@ -1,23 +1,18 @@
-# ignore everything in the root except the "wp-content" directory.
-!wp-content/
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title> Taiji </title>
+    </head>
+    <body>
+      <p> The Taiji software is an integrative multi-omics data analysis framework. It can be used as a standalone pipeline to analyze ATAC-seq, RNA-seq, single cell ATAC-seq or Drop-seq data. However, the uniqueness and the power of Taiji really lie in its ability to integrate diverse datasets and use these information in a clever way to construct regulatory network and identify candidate driver genes.
 
-# ignore everything in the "wp-content" directory, except:
-# "mu-plugins", "plugins", "themes" directory
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+The design philosophy of the Taiji pipeline is focused on:
 
-# ignore these plugins
-wp-content/plugins/hello.php
-
-# ignore specific themes
-wp-content/themes/twenty*/
-
-# ignore node dependency directories
-node_modules/
-
-# ignore log files and databases
-*.log
-*.sql
-*.sqlite
+Correctness: We only include reliable algorithms and make every effort to ensure the implementations are bug-free.
+Performance: We code algorithms from scratch when necessary to ensure the pipeline can scale to large datasets (thousands of samples at least).
+Convinence: Most analyses have multipe entry points, e.g., Fastq, Bam or Bed. The execution of the pipeline requires only a single command.
+We achieve these at the expense of customization. This will be improved in the future.
+      </p> 
+     </body>
+ </html> 
