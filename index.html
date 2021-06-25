@@ -3,8 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title> Taiji </title>
+        <style>
+                    
+        .margin{
+            margin: 50px;
+        }
+            
+        </style>
     </head>
     <body> <!---Can I connect this with a css page?--->
+
+      <div class="margin">
         <h1>Taiji</h1>
         <p> Note: Reserved for photo space</p> 
         <br>
@@ -77,26 +86,27 @@
                       </tr>
                 </table>
               </div>
+            <br>
+            </div>
+            <div style="border:1px solid black">
+                taiji run -- config config.yml -n 3 +RTS -N3
+            </div>
+
+            <h2>Tutorials</h2>
+            <ul>
+                <li>
+                    <a href="https://taiji-pipeline.github.io/blog_1_ATAC.html">Analyzing ATAC-seq data</a>
+                </li>
+                <li>
+                    <a href="https://taiji-pipeline.github.io/blog_2_ATAC+RNA.html">Integrated analysis of ATAC-seq and RNA-seq data</a>
+                </li>
+            </ul>
+            <p>If you have used <b>Taiji</b> in your research, please condier citing the following paper:</p>
+            <div>
+                K. Zhang, M. Wang, Y. Zhao, W. Wang, Taiji: System-level identification of key transcription factors reveals transcriptional waves in mouse embryonic development. 
+                Sci. Adv. 5, eaav3262 (2019).
+            </div>
         </div>
-        <div style="border:1px solid black">
-            taiji run -- config config.yml -n 3 +RTS -N3
-        </div>
-        
-        <h2>Tutorials</h2>
-        <ul>
-            <li>
-                <a href="https://taiji-pipeline.github.io/blog_1_ATAC.html">Analyzing ATAC-seq data</a>
-            </li>
-            <li>
-                <a href="https://taiji-pipeline.github.io/blog_2_ATAC+RNA.html">Integrated analysis of ATAC-seq and RNA-seq data</a>
-            </li>
-        </ul>
-        <p>If you have used <b>Taiji</b> in your research, please condier citing the following paper:</p>
-        <div>
-            K. Zhang, M. Wang, Y. Zhao, W. Wang, Taiji: System-level identification of key transcription factors reveals transcriptional waves in mouse embryonic development. 
-            Sci. Adv. 5, eaav3262 (2019).
-        </div>
-        
         
      </body>
  </html> 
