@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title> Taiji </title>
     </head>
-    <body>
+    <body> <!---Can I connect this with a css page?--->
         <h1>Taiji</h1>
         <p> Note: Reserved for photo space</p> 
         <br>
@@ -27,9 +27,11 @@
             <li>Convinence: Most analyses have multipe entry points, e.g., Fastq, Bam or Bed. The execution of the pipeline requires only a single command.</li>
         </ul> 
         <p> We achieve these at the expense of customization. This will be improved in the future.</p>
-        <br>
+        
         <h2>Quick Start</h2>
+        <!---How to make boxes under file 1 and file 2 float next to each other--->
         <div>
+            <p>File 1: config.yml</p>
            <div style="border:1px solid black" "width:50%" "float:left">
                 input: <q>input.tsv</q>
                 <br>
@@ -37,7 +39,9 @@
                 <br>
                 assembly: <q>GRCh38</q>
             </div> 
-            <div style="border:1px solid black" "width:75" "float:right">
+            
+            <p>File 2: input.tsv</p> <!---Im not sure which link to insert --->
+            <div style="border:1px solid black" "width:75" "float:right"> 
                <table>
                       <tr>
                             <td>type</td>
@@ -87,7 +91,6 @@
                 <a href="https://taiji-pipeline.github.io/blog_2_ATAC+RNA.html">Integrated analysis of ATAC-seq and RNA-seq data</a>
             </li>
         </ul>
-        <br>
         <p>If you have used <b>Taiji</b> in your research, please condier citing the following paper:</p>
         <div>
             K. Zhang, M. Wang, Y. Zhao, W. Wang, Taiji: System-level identification of key transcription factors reveals transcriptional waves in mouse embryonic development. 
