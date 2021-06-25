@@ -33,8 +33,21 @@
                 color: white;
             }
             
+            /* changes font of body*/
             body{
                 font-family: Arial;
+            }
+            
+            .float-container { 
+                border: 3px solid #fff;
+                padding: 20px;
+            }
+            
+            .float-child{
+                width:50%;
+                float: left;
+                padding: 20px;
+                border: 2px solid black;
             }
 
         </style>
@@ -75,18 +88,24 @@
         
         <h2>Quick Start</h2>
         <!---How to make boxes under file 1 and file 2 float next to each other--->
-        <div>
+        <div class="float-container">
             <p>File 1: config.yml</p>
-           <div style="border:1px solid black" "width:50%" "float:left">
+            <!---<div style="border:1px solid black" "width:50%" "float:left">
                 input: <q>input.tsv</q>
                 <br>
                 output_dir: <q>output/</q>
                 <br>
                 assembly: <q>GRCh38</q>
-            </div> 
+            </div> --->
+            <div class="float-child">
+                input: <q>input.tsv</q>
+                <br>
+                output_dir: <q>output/</q>
+                <br>
+                assembly: <q>GRCh38</q>
             
             <p>File 2: input.tsv</p> <!---Im not sure which link to insert --->
-            <div style="border:1px solid black" "width:75" "float:right"> 
+            <div class="float-child"> 
                <table>
                       <tr>
                             <td>type</td>
