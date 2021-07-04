@@ -27,10 +27,16 @@
             .topnav a.active{
                 background-color: #4CAF50;
             }
+      
+           /* changes font of body*/
+            body{
+                font-family: Arial;
+            }
     </style>
-  </head> <!--- change font to Arial---> 
-  <body> <!--- connect with index.html page? how to get to here via navigation bar?--->
-      <div class="topnav"> <!--- how can I get it to change pages with the navigation bar?---> 
+  </head> 
+  
+  <body>
+      <div class="topnav"> 
           <a href="https://zaudrey.github.io/index.html#home">Home</a>
           <a href="#workflow">Workflow</a>
           <a class="active" href="https://zaudrey.github.io/install.html#install">Install</a>
@@ -38,15 +44,32 @@
           <a href="#manual">Manual</a>
           <a href="#algorithm">Algorithm</a>
           <a href="#contact">Contact</a>
-        </div>
+     </div>
     <div>
       <h3>Installation instruction for command line interface</h3> 
       <p> 
         Pre-built binaries are available for macOS and Linux systems from <a href="https://github.com/Taiji-pipeline/Taiji/releases">github</a>.
       </p>
       <ul>
-        <li>taiji-CentOS-x86_64: for Red Hat Enterprise Linux derivatives. </li>
+        <li>taiji-CentOS-x86_64: for Red Hat Enterprise Linux derivatives.</li>
+        <li>taiji-Ubuntu-x86_64: for Debian linux derivatives</li>
+        <li>taiji-macOS-XX-XX: for macOS</li>
       </ul>  
+      
+      <div>
+        <p> curl -L https://github.com/Taiji-pipeline/Taiji/releases/latest/download/taiji-CentOS-x86_64 -o taiji chmod +x taiji 
+        <br>
+        ./taiji --help
+        </p>
+      </div>
+      <p> If a binary is not avaiable for your platform, you can build the program from the source follow these <a href="https://taiji-pipeline.github.io/documentation/install.html">
+        instructions </a> .
+      </p>
+      <p>
+        After installing the program, put it in your system's PATH. To verify that the installation is successful, type taiji --help in your 
+        command line. 
+      </p>
+      
     </div>
     
     
