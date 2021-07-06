@@ -9,6 +9,7 @@
                 .topnav{
                     background-color: #333;
                     overflow: hidden;
+                    font-family: Arial, Helvetica, sans-serif;
                  }
                 /* style the links inside the navigation bar*/
                  .topnav a{
@@ -33,6 +34,53 @@
                 body{
                     font-family: Arial;
                 }
+      
+               .dropdown {
+                    float: left;
+                    overflow: hidden;
+                  }
+
+                  .dropdown .dropbtn {
+                    cursor: pointer;
+                    font-size: 16px;  
+                    border: none;
+                    outline: none;
+                    color: white;
+                    padding: 14px 16px;
+                    background-color: inherit;
+                    font-family: inherit;
+                    margin: 0;
+                  }
+
+                  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+                    background-color: green;
+                  }
+
+                  .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                  }
+
+                  .dropdown-content a {
+                    float: none;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                  }
+
+                  .dropdown-content a:hover {
+                    background-color: #ddd;
+                  }
+
+                  .show {
+                    display: block;
+                  }
     </style>
   <body>
     <div class="topnav"> 
@@ -40,6 +88,17 @@
           <a href="https://taiji-pipeline.github.io/static/other/taiji.html">Workflow</a>
           <a href="https://zaudrey.github.io/install.html#install">Install</a>
           <a href="https://zaudrey.github.io/tutorial.html#tutorial">Tutorial</a>
+      
+          <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Tutorial
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">ATAC: CD8 T cell development</a>
+                  <a href="#">ATAC+RNA: Mouse development</a>
+                  <a href="#">scATAC:Mouse forebrain</a>
+           </div>
+      
           <a href="#manual">Manual</a>
           <a href="#algorithm">Algorithm</a>
           <a href="#contact">Contact</a>
