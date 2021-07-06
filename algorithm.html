@@ -134,5 +134,31 @@
     <h2>Constructing weighted TF regulatory network</h2>
     <p>The weighted network enable us to make use of many weak connections which otherwise will e excluded in an unweighted network.</p>
     <P>Note: place for image</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>The edge weight is a combination of three factors:</p>
+    <ol>
+      <li>Peak intensity <i>p</i>, represented by the p-value of a peak, rescaled to [0,1] by a sigmoid function.</li>
+      <li>Motif binding affinity <i>m</i>, represented by the p-value of the motif binding score, rescaled to [0,1] by a sigmoid function.</li>
+      <li>TF expression value <i>g</i>.</li>
+    </ol>
+    <p>If a TF <i>i</i> has <i>n</i>binding sites that are linked to gene <i>j</i>, then the edge weight is determined by:</p>
+    <p>note: insert photo here</p>
+    <h2>Computing TF ranks using the PageRank algorithm</h2>
+    <p>Let <i>s</i> be the vector containing node weights and <b>W</b> be the edge weight matrix. The personalized PageRank score vector <i>v</i> was calculated by solving a 
+      system of linear equations v=(1-d)s+dWv, where <i>d</i> is the damping factor (default to 0.85). The above equation can be solved in an interative fashion, <i>i.e.</i>
+      , setting vt+1=(1-d)s+dWvt. </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P8Kt6Abq_rM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h2>Statistical significance of PageRank scores</h2>
+    <p>To determine the statistical significance of PageRank scores, we randomly rewire edges in the network and compute the PageRank scores. We do this 10 times to get enough
+    samples for computing the null distribution. The p-values of PageRank scores were then inferred as to the null distribution.</p>
+      
+      
+      
   </body>
 </html>
