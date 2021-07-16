@@ -17,12 +17,15 @@
           <a href="https://zaudrey.github.io/contact.html">Contact</a>
      </div>
 
-    <div class="sidenav">
-      <a class="active" href="https://zaudrey.github.io/blog_1_ATAC.html">ATAC: CD8 T cell development</a>
-      <a href="#services">Services</a>
-      <a href="#clients">Clients</a>
-      <a href="#contact">Contact</a>
-    </div>
+     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     
     <p>In this tutorial, we will re-analyze the ATAC-seq data published in <a href="https://www.nature.com/articles/ni.3706">Yu, 2017.</a></p>
     <br>
@@ -35,6 +38,17 @@
       <li>bedGraphToBigWig</li>
     </ul>
     <p><b>All you need to do in this tutorial is preparing two files (input.tsv and config.yml) and typing a single command. Taiji will do the rest for you</b></p>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
 
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    
+    
   </body>
 </html>
