@@ -50,6 +50,7 @@
 
           /* Style the sidenav links and the dropdown button */
           .sidenav a, .dropdown-btn {
+            margin-top: 25px;
             padding: 6px 8px 6px 16px;
             text-decoration: none;
             font-size: 20px;
@@ -112,7 +113,7 @@
           <a href="https://zaudrey.github.io/algorithm.html">Algorithm</a>
           <a href="https://zaudrey.github.io/contact.html">Contact</a>
      </div>
-    
+
     <div class="sidenav">
       <a class="active" href="https://zaudrey.github.io/blog_1_ATAC.html">ATAC: CD8 T cell development</a>
       <a href="#services">Services</a>
@@ -121,6 +122,16 @@
     </div>
     
     <p>In this tutorial, we will re-analyze the ATAC-seq data published in <a href="https://www.nature.com/articles/ni.3706">Yu, 2017.</a></p>
+    <br>
+    <p>The anaylsis requires following addition software:</p>
+    <ul>
+      <li>fastq-dump</li>
+      <li>samtools</li>
+      <li>MACS2</li>
+      <li>bwa</li>
+      <li>bedGraphToBigWig</li>
+    </ul>
+    <p><b>All you need to do in this tutorial is preparing two files (input.tsv and config.yml) and typing a single command. Taiji will do the rest for you</b></p>
 
   </body>
 </html>
