@@ -1,13 +1,44 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Workflow</title>
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="https://zaudrey.github.io/blog_1.css">
   </head>
+  
   <body>
-    <img src ="https://taiji-pipeline.github.io/static/other/taiji.html" alt="Workflow" style ="width:100%">
-    
+    <div class="topnav"> 
+          <a href="https://zaudrey.github.io/index.html#home">Home</a>
+          <a href="https://taiji-pipeline.github.io/static/other/taiji.html">Workflow</a>
+          <a href="https://zaudrey.github.io/install.html#install">Install</a>
+          <a class="active" href="https://zaudrey.github.io/blog_1_ATAC.html">Tutorial</a>
+          <a href="https://taiji-pipeline.github.io/documentation/">Manual</a>
+          <a href="https://zaudrey.github.io/algorithm.html">Algorithm</a>
+          <a href="https://zaudrey.github.io/contact.html">Contact</a>
+     </div>
 
+     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://zaudrey.github.io/blog_1_ATAC.html">ATAC: CD8 T cell development</a>
+        <a class"active" href="https://zaudrey.github.io/blog_2_ATAC+RNA.html">ATAC+RNA: Mouse development</a>
+        <a href="zaudrey.github.io/blog_3_scATAC.html">scATAC: Mouse forebrain</a>
+      </div>
+      
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    
+    <p>In this tutorial, we will perform an integrated analysis of ATAC-seq and RNA-seq during mouse development. The original analysis was published in 
+      <a href="https://advances.sciencemag.org/content/5/3/eaav3262"><i>Zhang, 2019</i></a></p>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    
+    
   </body>
 </html>
