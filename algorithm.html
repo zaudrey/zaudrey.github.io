@@ -93,39 +93,15 @@
                     float: right;
                     padding-right: 8px;
                   }
-
       
     </style>
-    <script>
-        //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-          dropdown[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-              dropdownContent.style.display = "none";
-            } else {
-              dropdownContent.style.display = "block";
-            }
-        });
-        }
-    </script>
+  
   <body>
     <div class="topnav"> 
           <a href="https://zaudrey.github.io/index.html#home">Home</a>
           <a href="https://taiji-pipeline.github.io/static/other/taiji.html">Workflow</a>
           <a href="https://zaudrey.github.io/install.html#install">Install</a>
-          <a href="https://zaudrey.github.io/tutorial.html#tutorial">Tutorial</a>
-          
-          <!---<div class="sidenav">
-              <a href="#blog_1_ATAC.html">ATAC: CD8 T cell development</a>
-              <a href="#blog_2_ATAC+RNA.html">ATAC+RNA: Mouse development</a>
-              <a href="#blog_3_scATAC.html">scATAC:Mouse forebrain</a>
-          </div>    --->
-      
+          <a href="https://zaudrey.github.io/blog_1_ATAC.html">Tutorial</a>      
           <a href="https://taiji-pipeline.github.io/documentation/">Manual</a>
           <a class="active" href="https://zaudrey.github.io/algorithm.html">Algorithm</a>
           <a href="https://zaudrey.github.io/contact.html">Contact</a>
