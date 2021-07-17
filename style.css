@@ -54,7 +54,7 @@
             max-width: 1000px;
             position: relative;
             margin: auto;
-            height: 300px;
+            max-height: 300px;
           }
 
           /* Next & previous buttons */
